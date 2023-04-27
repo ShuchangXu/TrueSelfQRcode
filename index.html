@@ -1,1 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
 
+<head>
+    <meta charset="UTF-8">
+    <title>回家旅途 - 打破偏见,勇敢爱</title>
+    <script type="text/javascript">
+
+        var Terminal = {
+
+            platform: function () {
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {
+                    // android
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+                    // iOS
+                    iOS: u.indexOf('iPhone') > -1 || u.indexOf('iPad') > -1
+                };
+            }()
+        }
+        var theUrl = 'https://apps.apple.com/cn/app/id6446995626';
+        if (Terminal.platform.android) {
+            theUrl = 'https://github.com/CodaXu/TrueSelf/raw/master/_shippable/apks/WayHome_v1.1.apk';
+        } else {
+            theUrl = 'https://apps.apple.com/cn/app/id6446995626';
+        }
+        location.href = theUrl;
+
+
+    </script>
+</head>
+
+<body>
+    <!--
+ 
+    -->
+</body>
+
+</html>
